@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2015-2018,2020 Ivan Yelizariev
+     Copyright 2021 Denis Mudarisov <https://github.com/trojikman>
+     License OPL-1 (https://www.odoo.com/documentation/user/13.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
+<odoo>
+    <record id="website.show_website_info" model="ir.ui.view">
+        <field name="active" eval="False" />
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <value model="ir.model.data" search="[('module', '=', 'base'), ('name', '=', 'main_company')]"/>
+        <value eval="{'noupdate': False}"/>
+    </function>
+
+    <record id="base.main_company" model="res.company">
+        <field name="social_linkedin" eval="False" />
+        <field name="social_youtube" eval="False" />
+        <field name="social_linkedin" eval="False" />
+        <field name="social_youtube" eval="False" />
+        <field name="social_github" eval="False" />
+        <field name="social_instagram" eval="False" />
+        <field name="favicon" eval="False" />
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <value model="ir.model.data" search="[('module', '=', 'website'), ('name', '=', 'default_website')]"/>
+        <value eval="{'noupdate': False}"/>
+    </function>
+
+    <record id="website.default_website" model="website">
+        <field name="social_twitter" eval="False" />
+        <field name="social_facebook" eval="False" />
+        <field name="social_linkedin" eval="False" />
+        <field name="social_youtube" eval="False" />
+        <field name="social_github" eval="False" />
+        <field name="social_instagram" eval="False" />
+        <field name="favicon" eval="False" />
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <value model="ir.model.data" search="[('module', '=', 'website'), ('name', '=', 'website2')]"/>
+        <value eval="{'noupdate': False}"/>
+    </function>
+
+    <record id="website.website2" model="website">
+        <field name="social_twitter" eval="False" />
+        <field name="social_facebook" eval="False" />
+        <field name="social_linkedin" eval="False" />
+        <field name="social_youtube" eval="False" />
+        <field name="social_github" eval="False" />
+        <field name="social_instagram" eval="False" />
+        <field name="favicon" eval="False" />
+    </record>
+
+    <!-- <record id="website.footer_custom" model="ir.ui.view">
+        <field name="active" eval="True" />
+    </record> -->
+</odoo>
