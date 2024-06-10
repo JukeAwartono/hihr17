@@ -6,7 +6,7 @@ Copyright 2024 Awartono
 import { _t } from "@web/core/l10n/translation";
 import { useService } from "@web/core/utils/hooks";
 import { capitalize } from "@web/core/utils/strings";
-import { ErrorDialog, ClientErrorDialog, NetworkErrorDialog, WarningDialog, RedirectWarningDialog } from "@web/core/errors/error_dialogs";
+import { odooExceptionTitleMap, ErrorDialog, ClientErrorDialog, NetworkErrorDialog, WarningDialog, RedirectWarningDialog } from "@web/core/errors/error_dialogs";
 import { patch } from "@web/core/utils/patch";
 
 patch(ErrorDialog.prototype, {
@@ -51,4 +51,3 @@ patch(RedirectWarningDialog.prototype, {
         this.additionalContext = additionalContext;
     }
 });
-

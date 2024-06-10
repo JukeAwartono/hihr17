@@ -39,7 +39,6 @@
             "web_debranding/static/src/js/base.js",
             "web_debranding/static/src/js/dialog.js",
             "web_debranding/static/src/js/error_dialogs.js",
-            # "web_debranding/static/src/js/warning_dialog.js",
             "web_debranding/static/src/js/field_upgrade.js",
             "web_debranding/static/src/js/user_menu_items.js",
             "web_debranding/static/src/js/translation.js",
