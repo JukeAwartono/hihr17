@@ -16,7 +16,10 @@ patch(ActivityMenu.prototype, {
 
         if (login == 1) {
             return super.signInOut();
-        } else{
+        } else if (login == 3) {
+            window.alert("Employee image path not set!")
+        } 
+        else{
             window.alert("Failed to recognize the face. Please try again....")
         }
         // return super.setup();
