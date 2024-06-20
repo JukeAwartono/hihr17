@@ -12,7 +12,7 @@
     <!-- Template for buttons that display only the icon in xs -->
     <t t-name="web_responsive.icon_button_create">
         <i t-attf-class="fa fa-plus" title="New" />
-        <span class="d-none d-sm-inline ms-1">New</span>
+        <span class="d-none d-sm-inline ms-1">Create</span>
     </t>
     <t t-name="web_responsive.icon_button_save">
         <i t-attf-class="fa fa-check" title="Save" />
