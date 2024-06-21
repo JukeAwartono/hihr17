@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="web_translate.CalendarController" t-inherit="hr_holidays.CalendarController" t-inherit-mode="extension"> 
+        <xpath expr="//span[hasclass('o_timeoff_buttons')]" position="replace">
+            <span class="o_timeoff_buttons btn-group">
+                <div class="btn-group">
+                    <button class="btn btn-primary btn-time-off " t-on-click="newTimeOffRequest" type="button">
+                        <!-- New -->
+                        Create
+                    </button>
+                </div>
+            </span>
+        </xpath>
+    </t>
+
+</templates>

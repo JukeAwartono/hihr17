@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+    <t t-name="web_translate.HierarchyButtons" t-inherit="web_hierarchy.HierarchyButtons"
+        t-inherit-mode="extension">
+        <xpath expr="//button[hasclass('o_hierarchy_button_add')]" position="replace">
+            <button class="btn btn-primary o_hierarchy_button_add"
+                type="button"
+                t-on-click="props.createRecord"> Create
+            </button>
+        </xpath>
+    </t>
+
+</templates>
